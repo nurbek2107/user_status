@@ -59,14 +59,15 @@ const TodoDetail = () => {
             <p className='text-lg '>Email: {email || "N/A"}</p>
             <p className='text-lg '>Passport: {passport || "N/A"}</p>
           </div>
-        </div>
-        <button
+          <button
           className="btn btn-primary mt-4 px-4 py-2 text-lg font-semibold"
           onClick={() => setIsEditing(true)}
         >
           <MdOutlineEdit className='inline-block w-6 h-6 mr-2' />
           Edit
         </button>
+        </div>
+
       </div>
 
       {isEditing && (

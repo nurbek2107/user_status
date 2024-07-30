@@ -54,10 +54,10 @@ const TodoDetail = () => {
             />
           </div>
           <div className='ml-6 flex-grow'>
-            <p className='text-3xl font-bold '>{familyName || "N/A"}</p>
-            <p className='text-lg  mt-2'>Age: {age || "N/A"}</p>
-            <p className='text-lg '>Email: {email || "N/A"}</p>
-            <p className='text-lg '>Passport: {passport || "N/A"}</p>
+            <p className='text-3xl font-bold '>{familyName || "Full Name:"}</p>
+            <p className='text-lg  mt-2'> {age || "ID:"}</p>
+            <p className='text-lg '> {email || "Email:"}</p>
+            <p className='text-lg '> {passport || "Passport:"}</p>
           </div>
           <button
           className="btn btn-primary mt-4 px-4 py-2 text-lg font-semibold"
@@ -86,7 +86,7 @@ const TodoDetail = () => {
                 />
               </label>
               <label className="text-lg">
-                <span className="font-semibold">Age:</span>
+                <span className="font-semibold">ID:</span>
                 <input
                   type="text"
                   value={age}

@@ -183,11 +183,10 @@ function Home() {
                       </div>
                     </div>
                     <p className="text-xl">
-                      <span className="text-slate-600">ID:</span> {todo.age}
+                    {todo.age || "ID:"}
                     </p>
                     <p className="text-xl">
-                      <span className="text-slate-600">Family Name:</span>{" "}
-                      {todo.familyName}
+                      {todo.familyName || "Full Name:"}
                     </p>
                   </div>
                   <div className="flex items-center gap-4">
